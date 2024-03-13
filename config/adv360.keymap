@@ -37,7 +37,6 @@
     };
   keymap {
     compatible = "zmk,keymap";
-
     default_layer {
       bindings = <
         &none     &kp N1     &kp N2     &kp N3      &kp N4      &kp N5     &kp LG(X)                                                  &kp DEL &kp N6 &kp N7      &kp N8      &kp N9     &kp N0        &kp EQUAL
@@ -58,11 +57,11 @@
     };
     symbols_left_hand {
       bindings = <
-        &trans &trans &trans   &trans   &trans   &trans  &none                                           &none &trans &trans &trans &trans  &trans  &trans
-        &trans &trans &trans   &trans   &trans   &trans  &none                                           &none &trans &trans &trans &trans  &trans  &trans
-        &trans &kp LT &kp LPAR &kp LBKT &kp LBRC &trans  &none        &trans &trans &trans &trans        &none &trans &trans &trans &trans  &trans  &trans
-        &trans &trans &trans   &trans   &trans   &trans                      &trans &trans                     &trans &trans &trans &trans  &trans  &trans
-        &trans &trans &trans   &trans   &trans                 &trans &trans &trans &trans &trans &trans              &trans &trans &trans  &trans  &trans
+        &trans &trans &trans   &trans    &trans   &trans  &none                                     &bootloader &trans &trans   &trans   &trans    &trans  &trans
+        &trans &trans &trans   &trans    &trans   &trans  &none                                           &none &trans &trans   &trans   &trans    &trans  &trans
+        &trans &kp LT &kp LPAR &kp LBKT  &kp LBRC &trans  &none        &trans &trans &trans &trans        &none &trans &kp RBRC &kp RBKT &kp RPAR  &kp GT  &trans
+        &trans &trans &kp LT   &kp EQUAL &kp GT   &trans                      &trans &trans                     &trans &trans   &trans   &trans    &trans  &trans
+        &trans &trans &trans   &trans    &trans                 &trans &trans &trans &trans &trans &trans              &trans   &trans   &trans    &trans  &trans
       >;
     };
     keypad {
